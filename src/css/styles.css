@@ -1,0 +1,101 @@
+/* Variables CSS */
+:root {
+    --colorUno: #ffffff;
+    --colorDos: #ffffff;
+    --colorTres: #DDEBCF;
+    --colorCuatro: #f4f7f0;
+    --colorCinco: #DEC9AC;
+    --colorTexto: #333333;
+    --colorAccent: #6B8A5A;
+    --fuentePrincipal: "Roboto", sans-serif;
+    --fuenteSecundaria: "Lato", sans-serif;
+}
+
+/* General styles for the document HTML */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--colorUno);
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    color: var(--colorTexto);
+    background-color: var(--colorUno);
+    margin: 0;
+}
+
+/* Styles for containers */
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* General styles for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Styles for Section Navbar */
+.navbar__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: var(--colorUno);
+    border-bottom: 2px solid #e2e8f0;
+}
+
+@media (width >= 768px) {
+    .navbar__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.navbar__brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (width >= 768px) {
+    .navbar__brand {
+        margin-bottom: 0;
+    }
+}
+
+.navbar__img-logo {
+    height: 150px;   
+    width: auto;    
+    object-fit: contain;
+}
+
+.navbar__titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar__logo {
+    font-size: 1.8rem;
+    color: var(--colorTexto);
+    cursor: pointer;
+    margin: 0;
+    font-weight: 700;
+}
+
+.navbar__logo--primary {
+    color: var(--colorTexto);
+    font-weight: 300;
+}
+
+.navbar__subtitle {
+    font-size: 0.85rem;
+    color: #666;
+}
